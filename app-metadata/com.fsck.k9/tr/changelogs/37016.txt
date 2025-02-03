@@ -1,0 +1,5 @@
+- Hesap kurulumunda küçük hata düzeltmeleri ve kullanıcı deneyimi iyileştirmeleri
+- OpenKeychain 6.0.0 ile etkileşimden kaynaklanan bir çökme düzeltildi
+- mailto: URI'leri aracılığıyla oluşturma ekranı açılırken artık konu veya gövde alanlarına odaklanılacak
+- Dizgelerin %70'inden azı çevrildiği için İbranice ve Korece çeviriler kaldırıldı. Çevirileri güncelleyecek gönüllüleri kapımız daima açık!
+- Çeviriler güncellendi

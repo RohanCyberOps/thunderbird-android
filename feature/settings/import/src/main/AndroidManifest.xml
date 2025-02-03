@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <queries>
+        <!-- Required to be able to access the SettingsProvider of another app -->
+        <package android:name="com.fsck.k9"/>
+        <package android:name="net.thunderbird.android"/>
+        <package android:name="net.thunderbird.android.beta"/>
+        <package android:name="net.thunderbird.android.daily"/>
+    </queries>
+
+    <application>
+
+        <activity
+            android:name="app.k9mail.feature.settings.import.ui.OAuthFlowActivity"
+            android:label="@string/settings_import_oauth_sign_in"
+            />
+
+        <!-- We remove this activity entry to avoid all modules depending on this one having to define an override for
+             the manifest placeholder 'appAuthRedirectScheme'. The entry is added back in :app:common -->
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            tools:node="remove"
+            />
+
+    </application>
+</manifest>

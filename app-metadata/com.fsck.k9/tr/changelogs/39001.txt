@@ -1,0 +1,1 @@
+- İleti oluşturmak için ekran açıldığında oluşan çökme düzeltildi

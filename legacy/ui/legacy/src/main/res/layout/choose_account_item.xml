@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?attr/colorSurfaceContainerHighest"
+    android:gravity="start|center_vertical"
+    >
+
+    <View
+        android:id="@+id/chip"
+        android:layout_height="fill_parent"
+        android:layout_width="6dp"
+        tools:background="@sample/accounts.json/data/color"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingTop="8dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="8dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        tools:text="@sample/accounts.json/data/name"
+        />
+
+</LinearLayout>

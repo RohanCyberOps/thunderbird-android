@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="56dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="8dp"
+    >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/settings_import_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        tools:text="K-9 Mail"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/settings_import_app_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:text="@string/settings_import_app_version_not_supported"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+</LinearLayout>
